@@ -40,7 +40,7 @@ function leet(chaine) {
 
 
 function prop_access(obj, path) {
-    if(typeof(obj) != object || obj === null ) {
+    if(typeof(obj) !== "object" || obj === null ) {
      return path + " not exist";
     }
     if (typeof path != "string" ||  path === "") {

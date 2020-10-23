@@ -44,7 +44,7 @@ function prop_access(obj, path) {
      return path + " not exist";
     }
     if (typeof path != "string" ||  path === "") {
-        return object;
+        return obj;
       }
     let err = '';
     path.split('.').map(chld => typeof obj[chld] === 'null' && err === 'null' ? err = path.split(chld)[0] + chld + "no exist " : obj = obj[chld]);
